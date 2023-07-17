@@ -1,0 +1,12 @@
+header {
+    height: 70px;
+    background-color: rgb(218, 185, 136);
+}
+
+h1 {
+padding: 20px;
+font-family: 'Noticia Text', serif;
+font-weight: 700;
+font-size: 25px;
+color: rgb(126, 84, 28);
+}
