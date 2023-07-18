@@ -2,21 +2,52 @@ import React from "react";
 import "./Main.css";
 
 import HornedBeast from "../HornedBeast/HornedBeast";
+import data from "../../data.json";
 
 
 export default function Main() {
   return (
     <main>
       <HornedBeast 
-      title="HORNED LIZARD"
-      imgUrl="https://www.ndow.org/wp-content/uploads/2021/10/phrynosoma_platyrhinos-scaled.jpeg"
-      description="If threatened by predators, horned lizards will squirt blood from the eyes. The squirting blood comes from ducts in the corners of their eyes and can travel a distance of up to three feet"
-      />
+      title={data[0].title} imgUrl={data[0].image_url} description={data[0].description} />
       <HornedBeast 
-      title="BLACK RHINO"
-      imgUrl="https://cff2.earth.com/uploads/2022/04/14045415/Black-rhinos-960x640.png"
-      description="Rhinos can reach speeds of up to 55kph. Black rhino can be very aggressive and will charge at anything that scares them."
-      />
+      title={data[1].title} imgUrl={data[1].image_url} description={data[1].description} />
+      <HornedBeast 
+      title={data[2].title} imgUrl={data[2].image_url} description={data[2].description} />
+      <HornedBeast 
+      title={data[3].title} imgUrl={data[3].image_url} description={data[3].description} />
+      <HornedBeast 
+      title={data[4].title} imgUrl={data[4].image_url} description={data[4].description} />
+      <HornedBeast 
+      title={data[5].title} imgUrl={data[5].image_url} description={data[5].description} />
+      <HornedBeast 
+      title={data[6].title} imgUrl={data[6].image_url} description={data[6].description} />
+      <HornedBeast 
+      title={data[7].title} imgUrl={data[7].image_url} description={data[7].description} />
+      <HornedBeast 
+      title={data[8].title} imgUrl={data[8].image_url} description={data[8].description} />
+      <HornedBeast 
+      title={data[9].title} imgUrl={data[9].image_url} description={data[9].description} />
+      <HornedBeast 
+      title={data[10].title} imgUrl={data[10].image_url} description={data[10].description} />
+      <HornedBeast 
+      title={data[11].title} imgUrl={data[11].image_url} description={data[11].description} />
+      <HornedBeast 
+      title={data[12].title} imgUrl={data[12].image_url} description={data[12].description} />
+      <HornedBeast 
+      title={data[13].title} imgUrl={data[13].image_url} description={data[13].description} />
+      <HornedBeast 
+      title={data[14].title} imgUrl={data[14].image_url} description={data[14].description} />
+      <HornedBeast 
+      title={data[15].title} imgUrl={data[15].image_url} description={data[15].description} />
+      <HornedBeast 
+      title={data[16].title} imgUrl={data[16].image_url} description={data[16].description} />
+      <HornedBeast 
+      title={data[17].title} imgUrl={data[17].image_url} description={data[17].description} />
+      <HornedBeast 
+      title={data[18].title} imgUrl={data[18].image_url} description={data[18].description} />
+      <HornedBeast 
+      title={data[19].title} imgUrl={data[19].image_url} description={data[19].description} />
     </main>
   );
 }

@@ -4,7 +4,7 @@ import "./Footer.css";
 export default function Footer() {
   return (
     <footer>
-      <span>Author: Kumail Imran</span>
+      <p className="tag">Author: Kumail Imran</p>
     </footer>
   );
 }
