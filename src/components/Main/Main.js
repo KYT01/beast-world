@@ -4,10 +4,10 @@ import "./Main.css";
 import HornedBeast from "../HornedBeast/HornedBeast";
 
 
-export default function Main({ data, handleModal }) {
+export default function Main({ beastData, handleModal }) {
   return (
     <main>
-    {data.map((beast, key) => {
+    {beastData.map((beast, key) => {
       return (
         <HornedBeast
         key={beast._id}

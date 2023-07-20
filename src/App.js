@@ -13,6 +13,7 @@ import data from "./data.json";
 function App() {
   const [modal, setModal] = useState(false);
   const [modalContent, setModalContent] = useState({});
+  const [beastData, setBeastData] = useState(data);
 
 
   function handleModal(beast) {
@@ -25,10 +26,19 @@ function App() {
     setModalContent({});
   }
 
+
+  function handleBeasts(event) {
+    let beastNum = parseInt (event.target.value);
+
+    const filteredBeasts = data.filter(beast => beast.horns === beastNum);
+    event.target.value === "" ? setBeastData(data) : setBeastData(filteredBeasts);
+  }
+
+
   return (
     <div className="App">
-      <Header />
-      <Main data={data} handleModal={handleModal} />
+      <Header handleBeasts = {handleBeasts} />
+      <Main beastData={beastData} handleModal={handleModal} />
       {modal && <SelectedBeast modalContent={modalContent} closeModal={closeModal} />}
       <Footer />
     </div>
